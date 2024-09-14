@@ -4,18 +4,21 @@ const Generator = require("./main");
 
 const middleware = (req, res, next) => {
     if (!req.query.size) {
-        res.status(400).json({error:'Size parameter is missing'});
-        return;
+        req.size = 10;
+    }else{
+        req.size = req.query.size;
+    }
+    if(req.query.max_word_length && req.query.max_word_length <= 2){
+        res.json({error: 'max_word_length must be greater than 2'});
     }
     next();
 };
 app.get('/', (req, res) => {
-    res.send('Hello World');
-    
+    res.redirect('/api/v0');
 });
 app.get('/api/v0', middleware,(req, res) => {
-    let size = req.query.size;
-    let wordLength = req.query.word_length;
+    let size = req.size;
+    let wordLength = req.query.max_word_length;
     let gen = new Generator();
     if (wordLength){
         gen.maximumWordLength = wordLength;
