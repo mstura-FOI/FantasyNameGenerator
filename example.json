@@ -1,0 +1,28 @@
+{
+    "leaders": [
+        {
+            "name": "Uvuka",
+            "country": "Zarathia",
+            "empire_climate": "Temperate",
+            "empire_location": "Eastern Hemisphere",
+            "empire_population": "10 million",
+            "empire_size": "1 million square miles",
+            "empire_capital": "Zarathia",
+            "empire_language": "Zarathian",
+            "empire_religion": "Celestial Worship",
+            "empire_currency": "Zarathian Gold",
+            "empire_technology": "Advanced",
+            "empire_resources": "Gold, Silver, Iron, Timber",
+            "empire_allies": "Astralia, Vesperia",
+            "empire_terains": "Mountains, Forests, Plains",
+            "background_story": "Uvuka was a revered warrior and tactician who rose from humble origins to become the unquestioned ruler of Zarathia. Her leadership style was marked by a blend of fierce military prowess and profound wisdom. She expanded her empire's borders through strategic alliances and well-planned conquests, all the while maintaining a balance with neighboring kingdoms through diplomacy.",
+            "empire": {
+                "name": "Celestial Empire",
+                "country": "Zarathia",
+                "start": "1030",
+                "end": "1100",
+                "background_story": "The Celestial Empire was renowned for its advancements in astronomy, philosophy, and the arts. Emerging from the unification of feuding tribes under Uvuka's rule, the empire flourished, creating a golden era of cultural and scientific achievements that were unparalleled in its time."
+            }
+        }
+    ]
+}
